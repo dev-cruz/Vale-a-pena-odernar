@@ -13,6 +13,7 @@ from insertion import insertion
 from merge import mergesort
 from quicksort import quicksort
 from selection import selection
+from native_sort import native_sort
 
 #search algorithms
 from binary_search import binary_search
@@ -47,7 +48,7 @@ def count_searches(value, ordered_array, total_time):
 
 seed(1)
 
-functions = [insertion, selection, mergesort, quicksort]
+functions = [insertion, selection, mergesort, quicksort, native_sort]
 hash_table = {
     "5000": [],
     "10000": [],
@@ -57,8 +58,8 @@ hash_table = {
 }
 
 table = PrettyTable([
-    "n", "Selection", "Insertion", "Merge", "Quick",
-    "Selection (buscas)", "Insertion (buscas)", "Merge (buscas)", "Quick (buscas)"
+    "n", "Selection", "Insertion", "Merge", "Quick", "Native",
+    "Selection (buscas)", "Insertion (buscas)", "Merge (buscas)", "Quick (buscas)", "Native (buscas)"
     ])
 
 print("Aluno: Douglas Henrique Teixeira Barboza")
