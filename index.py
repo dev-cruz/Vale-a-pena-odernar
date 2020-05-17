@@ -58,8 +58,13 @@ hash_table = {
 
 table = PrettyTable([
     "n", "Selection", "Insertion", "Merge", "Quick",
-    "Selection (buscas)", "Insertion Sort (buscas)", "Merge Sort (buscas)", "Quick Sort (buscas)"
+    "Selection (buscas)", "Insertion (buscas)", "Merge (buscas)", "Quick (buscas)"
     ])
+
+print("Aluno: Douglas Henrique Teixeira Barboza")
+print("Aluno: Joao Victor da Silva Cruz")
+print("FATEC - Sao Jose dos Campos")
+print("Tempos de Ordenacao                              Numero de Buscas")
 
 for i in hash_table:
     array = randint(0, 1000, int(i))
