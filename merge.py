@@ -1,7 +1,3 @@
-import time
-
-ini = time.time()
-
 def mergesort(v):
     if len(v) <= 1:
         return v
@@ -25,14 +21,3 @@ def merge(e, d):
     r += e[i:]
     r += d[j:]
     return r
-
-
-from random import sample
-
-v = sample(range(10), 10)
-print(v)
-v = mergesort(v)
-print(v)
-
-fim = time.time()
-print(f'{fim - ini:.2f}')
